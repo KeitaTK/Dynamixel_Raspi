@@ -6,8 +6,8 @@ from Dynamixel import Dynamixel
 #Dynamixel設定
 DXL_IDs = [1, 2]
 BAUDRATE = 1e6
-#DEVICENAME = '/dev/ttyUSB0' # for Ubuntu
-DEVICENAME = 'COM5'         # for Win
+DEVICENAME = '/dev/ttyUSB0' # for Ubuntu
+# DEVICENAME = 'COM5'         # for Win
 dyn = Dynamixel(DEVICENAME, BAUDRATE)
 dyn.setRecommendedValue(DXL_IDs)
 
